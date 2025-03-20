@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="titlebar">
+        <button class="titlebar-button minimize-button" id="minimizeBtn"></button>
+        <button class="titlebar-button close-button" id="closeBtn"></button>
+    </div>
+    <div class="container">
+        <div class="common-card countdown-card">
+            <h1 class="title">graduation!!</h1>
+            
+            <div class="countdown-boxes">
+                <div class="digit-box" id="day1">0</div>
+                <div class="digit-box" id="day2">0</div>
+                
+                <div class="digit-box" id="hour1">0</div>
+                <div class="digit-box" id="hour2">0</div>
+                
+                <div class="digit-box" id="minute1">0</div>
+                <div class="digit-box" id="minute2">0</div>
+            </div>
+            
+            <div class="labels">
+                <div class="label-group">
+                    <span class="label">days</span>
+                </div>
+                <div class="label-group">
+                    <span class="label">hours</span>
+                </div>
+                <div class="label-group">
+                    <span class="label">minutes</span>
+                </div>
+            </div>
+            
+            <div class="button-container">
+                <button id="motivationBtn">motivation??</button>
+            </div>
+        </div>
+        <div class="common-card motivation-popup" id="motivationPopup">
+            <img id="motivationImage" src="img/1.jpg" alt="Motivational Image">
+            <div class="button-container">
+                <button id="backBtn">back</button>
+                <button id="moreBtn">more??</button>
+            </div>
+        </div>
+        <div class="common-card grad-popup" id="gradPopup">
+            <img id="gradImage" src="img/grad.gif">
+            <img id="confetti" src="img/confetti.gif">
+            <div class="message">
+                <p>congratss!! im so so proud of you and how far you've come! even though we will be apart i will 4ever be cheering u on from the sidelines!</p>
+            </div>
+            <audio id="backgroundMusic" loop>
+                <source src="song.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
+
+

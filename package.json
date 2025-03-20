@@ -1,0 +1,36 @@
+{
+  "name": "graduation-countdown-widget",
+  "version": "1.0.0",
+  "description": "A countdown widget for graduation",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Jonique Chan",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.joniquechan.graduationcountdown",
+    "productName": "Graduation Countdown",
+    "files": [
+      "**/*",
+      "src/**/*"
+    ],
+    "directories": {
+      "buildResources": "src"
+    },
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}
