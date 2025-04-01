@@ -200,7 +200,7 @@ body {
 .titlebar {
     -webkit-app-region: drag;
     height: 30px;
-    background-color: #b5bd91;
+    background-color: #f5efe6;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -212,25 +212,4 @@ body {
     z-index: 1000;
 }
   
-.titlebar-button {
-    -webkit-app-region: no-drag;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    margin-left: 8px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-  
-.minimize-button {
-    background-color: #f1fa8c;
-}
-  
-.close-button {
-    background-color: #ff5555;
-}
-  
-.titlebar-button:hover {
-    filter: brightness(0.9);
-}
+

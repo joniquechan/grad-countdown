@@ -1,26 +1,6 @@
 const { remote } = require('electron');
 
 document.addEventListener("DOMContentLoaded", function () {
-    // for titlebar
-    const minimizeBtn = document.getElementById('minimizeBtn');
-    const closeBtn = document.getElementById('closeBtn');
-  
-    if (minimizeBtn) {
-        minimizeBtn.addEventListener('click', () => {
-        if (window.electron && window.electron.minimizeWindow) {
-            window.electron.minimizeWindow();
-        }
-        });
-    }
-  
-    if (closeBtn) {
-        closeBtn.addEventListener('click', () => {
-        if (window.electron && window.electron.closeWindow) {
-            window.electron.closeWindow();
-        }
-        });
-    }
-    
     // get document elements
     const day1Element = document.getElementById('day1');
     const day2Element = document.getElementById('day2');

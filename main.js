@@ -9,6 +9,7 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     width: 500,
     height: 500,
+    titleBarStyle: 'hidden',
     frame: false,           // Remove window frame
     transparent: true,      // Make window background transparent
     resizable: true,       
@@ -17,7 +18,8 @@ function createWindow() {
       nodeIntegration: true,
       contextIsolation: false,
       preload: path.join(__dirname, 'preload.js')
-    }
+    },
+    ...(process.platform !== 'darwin' ? { titleBarOverlay: true } : {})
   });
 
 
